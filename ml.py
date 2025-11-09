@@ -369,4 +369,4 @@ except Exception:
 
 cap.release()
 cv2.destroyAllWindows()
-print("Exited cleanly.")
+print("Exited cleanly.")

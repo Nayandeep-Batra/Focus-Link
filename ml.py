@@ -185,6 +185,10 @@ no_face_start = None
 
 print("Tracker running. Press 'q' in the window to quit.")
 
+#Focus Tracking counters
+focused_frames = 0
+total_frames = 0
+
 # ---------- Main loop ----------
 while True:
     ret, frame = cap.read()
@@ -335,6 +339,11 @@ while True:
             status = "DISTRACTED"
         else:
             status = "CONCENTRATED"
+    
+    #Count Focus Frames
+    if status == "CONCENTRATED" :
+        focused_frames += 1
+    total_frames += 1
 
     # Draw UI
     bar_x, bar_y, bar_w, bar_h = 18, 22, 320, 30
@@ -369,4 +378,15 @@ except Exception:
 
 cap.release()
 cv2.destroyAllWindows()
+
+# Show final focus summary
+if total_frames > 0:
+    focus_percent = (focused_frames / total_frames) * 100
+    print(f"\nSession Complete")
+    print(f"Total frames :{total_frames}")
+    print(f"Focused frames :{focused_frames}")
+    print(f"Average Concentration :{focus_percent:.2f}%\n")
+else:
+    print("No frames recorded.")
+
 print("Exited cleanly.")

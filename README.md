@@ -67,7 +67,7 @@ pip install -r requirements.txt
 #### 5. Run the Tracker
 
 ```bash
-python ml.py
+python FocusLink.py
 ```
 
 To stop, press `q`

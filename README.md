@@ -2,7 +2,8 @@
 
 A robust, real-time Concentration Tracker built using MediaPipe, YOLOv8, and OpenCV. This system detects face, eyes, and head pose to estimate focus level, while simultaneously monitoring for environmental distractions, making it ideal for online-exam monitoring, driver fatigue detection, or attention-tracking demos.
 
-## Features...
+
+## Features
 
 
 * Real-time face & eye detection using MediaPipe Face Mesh
@@ -13,7 +14,7 @@ A robust, real-time Concentration Tracker built using MediaPipe, YOLOv8, and Ope
 
 ⚠️ Setup & Installation
 
-This project requires Python 3.11 for stable compatibility with the mediapipe library, Using newer versions (like 3.12+) may result in installation errors...
+This project requires Python 3.11 for stable compatibility with the mediapipe library, Using newer versions (like 3.12+) may result in installation errors.
 
 ### To Quickstart, Tap Run Button
 

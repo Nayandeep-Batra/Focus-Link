@@ -14,7 +14,7 @@ import os
 # --- NEW: GOOGLE GEMINI INTEGRATION ---
 import google.generativeai as genai
 
-GOOGLE_API_KEY = "AIzaSyB6pHHs2B86LuXhk5AOsl_IAoTkzFFc-1o"
+GOOGLE_API_KEY = "AIzaSyDmyvpcE6O8g4_3HMY1DUcqgrOr6ICf-HQ"
 
 # Configure Gemini
 try:
